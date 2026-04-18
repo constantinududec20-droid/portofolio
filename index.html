@@ -8,6 +8,22 @@
       name="description"
       content="Online CV for Constantin Ududec, Security Engineer, featuring profile, skills, certifications and contact details."
     />
+    <meta property="og:title" content="Constantin Ududec | Security Engineer" />
+    <meta
+      property="og:description"
+      content="Security Engineer focused on detection, response and automation in cyber security."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://constantinududec20-droid.github.io/portofolio/" />
+    <meta property="og:image" content="https://constantinududec20-droid.github.io/portofolio/profile.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Constantin Ududec | Security Engineer" />
+    <meta
+      name="twitter:description"
+      content="Security Engineer focused on detection, response and automation in cyber security."
+    />
+    <meta name="twitter:image" content="https://constantinududec20-droid.github.io/portofolio/profile.jpg" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=20260419-3" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +33,12 @@
     <link rel="stylesheet" href="styles.css?v=20260419-2" />
   </head>
   <body>
+    <div class="scroll-progress" aria-hidden="true">
+      <span class="scroll-progress-bar" id="scroll-progress-bar"></span>
+    </div>
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+      ↑
+    </button>
     <div class="page-loader" id="page-loader" aria-hidden="true">
       <div class="loader-curtain loader-curtain-left"></div>
       <div class="loader-curtain loader-curtain-right"></div>
@@ -37,6 +59,9 @@
     </div>
     <div class="page-shell">
       <header class="hero" id="top">
+        <div class="hero-ambient hero-ambient-one" aria-hidden="true"></div>
+        <div class="hero-ambient hero-ambient-two" aria-hidden="true"></div>
+        <div class="hero-ambient hero-ambient-grid" aria-hidden="true"></div>
         <nav class="nav">
           <a class="brand animated-brand" href="#top">
             <span class="brand-text">Constantin Ududec</span>
@@ -59,21 +84,21 @@
           </div>
           <p class="eyebrow">Owner: Constantin Ududec</p>
           <h1>Security Engineer focused on detection, response and automation in cyber security.</h1>
-          <p class="hero-text">
+          <p class="hero-text typewriter-text" data-text="This is my online CV, built to present clearly who I am, what I do, and how I contribute inside modern cyber security environments.">
             This is my online CV, built to present clearly who I am, what I do,
             and how I contribute inside modern cyber security environments.
           </p>
           <div class="hero-stats">
             <article class="hero-stat">
-              <strong>3+</strong>
+              <strong class="counter" data-target="3" data-suffix="+">3+</strong>
               <span>Years across security operations and engineering</span>
             </article>
             <article class="hero-stat">
-              <strong>10+</strong>
+              <strong class="counter" data-target="10" data-suffix="+">10+</strong>
               <span>Platforms and tools used in monitoring and response</span>
             </article>
             <article class="hero-stat">
-              <strong>14+</strong>
+              <strong class="counter" data-target="14" data-suffix="+">14+</strong>
               <span>Certifications, badges and technical training records</span>
             </article>
           </div>
@@ -86,6 +111,59 @@
 
         <div class="hero-card reveal">
           <p class="card-label">Quick profile</p>
+          <div class="threat-hunt-scene" aria-hidden="true">
+            <div class="threat-hunt-head">
+              <span class="threat-hunt-badge">Threat Hunt</span>
+              <span class="threat-hunt-status">Live defense</span>
+            </div>
+            <div class="threat-hunt-arena">
+              <div class="scan-ring scan-ring-one"></div>
+              <div class="scan-ring scan-ring-two"></div>
+              <div class="defense-bot">
+                <span class="defense-core"></span>
+                <span class="defense-gun"></span>
+                <span class="defense-beam"></span>
+                <span class="defense-pulse defense-pulse-one"></span>
+                <span class="defense-pulse defense-pulse-two"></span>
+              </div>
+              <div class="threat threat-one">
+                <span></span>
+              </div>
+              <div class="threat threat-two">
+                <span></span>
+              </div>
+              <div class="threat threat-three">
+                <span></span>
+              </div>
+              <div class="threat threat-four">
+                <span></span>
+              </div>
+              <div class="threat-toast" id="threat-toast">Threat neutralized</div>
+            </div>
+          </div>
+          <div class="security-widget" aria-label="Security status widget">
+            <div class="security-widget-head">
+              <span class="security-widget-label">Security Status</span>
+              <span class="security-widget-state" id="security-widget-state">Operational</span>
+            </div>
+            <div class="security-widget-grid">
+              <article class="security-widget-card">
+                <span class="security-widget-kicker">Detection</span>
+                <strong id="security-detection-value">97%</strong>
+                <p>Signal confidence across active monitoring flows.</p>
+              </article>
+              <article class="security-widget-card">
+                <span class="security-widget-kicker">Response</span>
+                <strong id="security-response-value">Auto</strong>
+                <p>Playbook-driven triage and containment ready.</p>
+              </article>
+              <article class="security-widget-card">
+                <span class="security-widget-kicker">Threat Feed</span>
+                <strong id="security-threat-value">4 live</strong>
+                <p>Correlated events moving through the defense scene.</p>
+              </article>
+            </div>
+          </div>
           <div class="portrait-shell">
             <img
               class="portrait"
@@ -154,6 +232,39 @@
           </div>
         </section>
 
+        <section class="section achievements" id="achievements">
+          <div class="section-heading reveal">
+            <p class="section-tag">Highlights</p>
+            <h2>Three areas that define how I work inside modern security environments</h2>
+          </div>
+          <div class="achievement-grid">
+            <article class="achievement-card reveal">
+              <span class="achievement-mark">01</span>
+              <h3>Investigation-first mindset</h3>
+              <p>
+                I focus on context, signal quality and clear decision-making when moving from
+                alert to validated incident handling.
+              </p>
+            </article>
+            <article class="achievement-card achievement-card-primary reveal">
+              <span class="achievement-mark">02</span>
+              <h3>Automation with purpose</h3>
+              <p>
+                I use SOAR and workflow thinking to remove repetitive analyst work and make
+                response processes more consistent.
+              </p>
+            </article>
+            <article class="achievement-card reveal">
+              <span class="achievement-mark">03</span>
+              <h3>Detection and tuning discipline</h3>
+              <p>
+                I care about improving detections, reducing false positives and making tooling
+                easier to trust during real investigations.
+              </p>
+            </article>
+          </div>
+        </section>
+
         <section class="section stack" id="stack">
           <div class="section-heading reveal">
             <p class="section-tag">Tool Stack</p>
@@ -168,16 +279,16 @@
               </p>
             </div>
             <div class="stack-grid">
-              <article class="stack-card"><span>SIEM</span><h4>Wazuh</h4></article>
-              <article class="stack-card"><span>SOAR</span><h4>Cortex XSOAR</h4></article>
-              <article class="stack-card"><span>EDR</span><h4>Microsoft Defender</h4></article>
-              <article class="stack-card"><span>EDR</span><h4>CrowdStrike Falcon</h4></article>
-              <article class="stack-card"><span>Case Mgmt</span><h4>TheHive</h4></article>
-              <article class="stack-card"><span>Detection</span><h4>Praeco</h4></article>
-              <article class="stack-card"><span>Analytics</span><h4>Exabeam</h4></article>
-              <article class="stack-card"><span>Endpoint</span><h4>SentinelOne</h4></article>
-              <article class="stack-card"><span>Endpoint</span><h4>Palo Alto EDR</h4></article>
-              <article class="stack-card"><span>Network</span><h4>Security Onion</h4></article>
+              <article class="stack-card"><div class="stack-logo">WZ</div><span>SIEM</span><h4>Wazuh</h4></article>
+              <article class="stack-card"><div class="stack-logo">XO</div><span>SOAR</span><h4>Cortex XSOAR</h4></article>
+              <article class="stack-card"><div class="stack-logo">MD</div><span>EDR</span><h4>Microsoft Defender</h4></article>
+              <article class="stack-card"><div class="stack-logo">CF</div><span>EDR</span><h4>CrowdStrike Falcon</h4></article>
+              <article class="stack-card"><div class="stack-logo">TH</div><span>Case Mgmt</span><h4>TheHive</h4></article>
+              <article class="stack-card"><div class="stack-logo">PR</div><span>Detection</span><h4>Praeco</h4></article>
+              <article class="stack-card"><div class="stack-logo">EX</div><span>Analytics</span><h4>Exabeam</h4></article>
+              <article class="stack-card"><div class="stack-logo">S1</div><span>Endpoint</span><h4>SentinelOne</h4></article>
+              <article class="stack-card"><div class="stack-logo">PA</div><span>Endpoint</span><h4>Palo Alto EDR</h4></article>
+              <article class="stack-card"><div class="stack-logo">SO</div><span>Network</span><h4>Security Onion</h4></article>
             </div>
           </div>
         </section>
@@ -323,7 +434,7 @@
             <article class="education-card reveal">
               <span class="education-period">2013 - 2017</span>
               <h3>Colegiul National Stefan cel Mare Suceava</h3>
-              <p>Baccalaureat, Mathematics and Computer Science</p>
+              <p>Bacalaureat, Mathematics and Computer Science</p>
             </article>
           </div>
         </section>
@@ -341,6 +452,13 @@
                 Built around the idea of reducing repetitive analyst work through cleaner
                 playbooks, faster triage and more consistent response handling.
               </p>
+              <div class="project-expand">
+                <p>
+                  Focused on standardizing response steps, reducing analyst friction and
+                  making repetitive workflows easier to execute and review.
+                </p>
+              </div>
+              <button class="project-toggle" type="button">Read more</button>
             </article>
             <article class="project-card reveal">
               <span class="project-label">Detection Tuning</span>
@@ -349,6 +467,13 @@
                 Focused on refining rules, correlations and alert logic so investigations
                 start from better quality detections.
               </p>
+              <div class="project-expand">
+                <p>
+                  The goal was cleaner alerts, better prioritization and less wasted time
+                  for analysts handling noisy security events.
+                </p>
+              </div>
+              <button class="project-toggle" type="button">Read more</button>
             </article>
             <article class="project-card reveal">
               <span class="project-label">Investigation Flow</span>
@@ -357,6 +482,13 @@
                 Worked across tools such as Wazuh, TheHive, Defender and Exabeam to connect
                 context quickly and move incidents forward with clarity.
               </p>
+              <div class="project-expand">
+                <p>
+                  Built around fast context gathering, evidence correlation and clearer case
+                  progression from alert to validated incident handling.
+                </p>
+              </div>
+              <button class="project-toggle" type="button">Read more</button>
             </article>
           </div>
         </section>
@@ -384,7 +516,7 @@
               </div>
             </article>
             <div class="cert-grid">
-              <article class="cert-card cert-card-primary reveal">
+              <article class="cert-card cert-card-primary reveal" data-cert-title="Fortinet Certified Associate Cybersecurity" data-cert-link="https://www.credly.com/badges/8cd7c116-0633-4950-a082-90f749fcb080/" data-cert-issuer="Fortinet">
                 <div class="cert-meta">
                   <span class="issuer-mark">Fortinet</span>
                   <span class="cert-status">Badge</span>
@@ -392,7 +524,7 @@
                 <h3>Fortinet Certified Associate Cybersecurity</h3>
                 <a class="badge-link" href="https://www.credly.com/badges/8cd7c116-0633-4950-a082-90f749fcb080/" target="_blank" rel="noreferrer">View credential</a>
               </article>
-              <article class="cert-card cert-card-primary reveal">
+              <article class="cert-card cert-card-primary reveal" data-cert-title="Fortinet FortiGate 7.6 Operator" data-cert-link="https://www.credly.com/badges/98d7c329-0a20-4750-bc50-2f674c09b29f" data-cert-issuer="Fortinet">
                 <div class="cert-meta">
                   <span class="issuer-mark">Fortinet</span>
                   <span class="cert-status">Badge</span>
@@ -400,7 +532,7 @@
                 <h3>Fortinet FortiGate 7.6 Operator</h3>
                 <a class="badge-link" href="https://www.credly.com/badges/98d7c329-0a20-4750-bc50-2f674c09b29f" target="_blank" rel="noreferrer">View credential</a>
               </article>
-              <article class="cert-card cert-card-primary reveal">
+              <article class="cert-card cert-card-primary reveal" data-cert-title="Introduction to the Threat Landscape 3.0" data-cert-link="https://www.credly.com/badges/d5aa0139-3aa2-456d-9430-9f8370dbb447" data-cert-issuer="Fortinet">
                 <div class="cert-meta">
                   <span class="issuer-mark">Fortinet</span>
                   <span class="cert-status">Badge</span>
@@ -408,7 +540,7 @@
                 <h3>Introduction to the Threat Landscape 3.0</h3>
                 <a class="badge-link" href="https://www.credly.com/badges/d5aa0139-3aa2-456d-9430-9f8370dbb447" target="_blank" rel="noreferrer">View credential</a>
               </article>
-              <article class="cert-card reveal">
+              <article class="cert-card reveal" data-cert-title="Working with Context and Parsing in Log Stream" data-cert-link="https://verify.skilljar.com/c/3yi6oijt6tyh" data-cert-issuer="Exabeam">
                 <div class="cert-meta">
                   <span class="issuer-mark">Exabeam</span>
                   <span class="cert-status">Verified</span>
@@ -416,7 +548,7 @@
                 <h3>Working with Context and Parsing in Log Stream</h3>
                 <a class="badge-link" href="https://verify.skilljar.com/c/3yi6oijt6tyh" target="_blank" rel="noreferrer">Open certificate</a>
               </article>
-              <article class="cert-card reveal">
+              <article class="cert-card reveal" data-cert-title="Investigating Threats with Advanced Analytics" data-cert-link="https://verify.skilljar.com/c/7wqrt7k9dtbt" data-cert-issuer="Exabeam">
                 <div class="cert-meta">
                   <span class="issuer-mark">Exabeam</span>
                   <span class="cert-status">Verified</span>
@@ -424,7 +556,7 @@
                 <h3>Investigating Threats with Advanced Analytics</h3>
                 <a class="badge-link" href="https://verify.skilljar.com/c/7wqrt7k9dtbt" target="_blank" rel="noreferrer">Open certificate</a>
               </article>
-              <article class="cert-card reveal">
+              <article class="cert-card reveal" data-cert-title="Using Advanced Analytics" data-cert-link="https://verify.skilljar.com/c/dn7zt3dwn3cw" data-cert-issuer="Exabeam">
                 <div class="cert-meta">
                   <span class="issuer-mark">Exabeam</span>
                   <span class="cert-status">Verified</span>
@@ -432,7 +564,7 @@
                 <h3>Using Advanced Analytics</h3>
                 <a class="badge-link" href="https://verify.skilljar.com/c/dn7zt3dwn3cw" target="_blank" rel="noreferrer">Open certificate</a>
               </article>
-              <article class="cert-card reveal">
+              <article class="cert-card reveal" data-cert-title="Rule Tuning for Advanced Analytics" data-cert-link="https://verify.skilljar.com/c/j5hnjrkyo7ue" data-cert-issuer="Exabeam">
                 <div class="cert-meta">
                   <span class="issuer-mark">Exabeam</span>
                   <span class="cert-status">Verified</span>
@@ -440,7 +572,7 @@
                 <h3>Rule Tuning for Advanced Analytics</h3>
                 <a class="badge-link" href="https://verify.skilljar.com/c/j5hnjrkyo7ue" target="_blank" rel="noreferrer">Open certificate</a>
               </article>
-              <article class="cert-card reveal">
+              <article class="cert-card reveal" data-cert-title="Cortex XSOAR 6 Security Orchestration and Automation Course" data-cert-link="https://www.udemy.com/certificate/UC-2815f1ab-2367-4169-9a72-09323f187d92/" data-cert-issuer="Palo Alto / Udemy">
                 <div class="cert-meta">
                   <span class="issuer-mark">Palo Alto / Udemy</span>
                   <span class="cert-status">Certificate</span>
@@ -448,7 +580,7 @@
                 <h3>Cortex XSOAR 6 Security Orchestration and Automation Course</h3>
                 <a class="badge-link" href="https://www.udemy.com/certificate/UC-2815f1ab-2367-4169-9a72-09323f187d92/" target="_blank" rel="noreferrer">Open certificate</a>
               </article>
-              <article class="cert-card reveal">
+              <article class="cert-card reveal" data-cert-title="Microsoft Security, Compliance, and Identity Fundamentals" data-cert-link="https://learn.microsoft.com/en-us/users/constantinududec-5881/credentials/e6eec74a5497fc7c?ref=https%3A%2F%2Fwww.linkedin.com%2F" data-cert-issuer="Microsoft">
                 <div class="cert-meta">
                   <span class="issuer-mark">Microsoft</span>
                   <span class="cert-status">Credential</span>
@@ -456,7 +588,7 @@
                 <h3>Microsoft Security, Compliance, and Identity Fundamentals</h3>
                 <a class="badge-link" href="https://learn.microsoft.com/en-us/users/constantinududec-5881/credentials/e6eec74a5497fc7c?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noreferrer">View credential</a>
               </article>
-              <article class="cert-card reveal">
+              <article class="cert-card reveal" data-cert-title="Cisco Certified CyberOps Associate" data-cert-link="https://www.credly.com/badges/7d7a4673-6dfe-4657-aeac-41b7c30ca0d9" data-cert-issuer="Cisco">
                 <div class="cert-meta">
                   <span class="issuer-mark">Cisco</span>
                   <span class="cert-status">Badge</span>
@@ -464,7 +596,7 @@
                 <h3>Cisco Certified CyberOps Associate</h3>
                 <a class="badge-link" href="https://www.credly.com/badges/7d7a4673-6dfe-4657-aeac-41b7c30ca0d9" target="_blank" rel="noreferrer">View badge</a>
               </article>
-              <article class="cert-card cert-card-private reveal">
+              <article class="cert-card cert-card-private reveal" data-cert-title="IC3 Key Applications - Global Standard 4" data-cert-issuer="IC3">
                 <div class="cert-meta">
                   <span class="issuer-mark">IC3</span>
                   <span class="cert-status">No public link</span>
@@ -472,7 +604,7 @@
                 <h3>IC3 Key Applications - Global Standard 4</h3>
                 <p>Issued May 2015</p>
               </article>
-              <article class="cert-card cert-card-private reveal">
+              <article class="cert-card cert-card-private reveal" data-cert-title="IC3 GS4 - Key Applications" data-cert-issuer="IC3">
                 <div class="cert-meta">
                   <span class="issuer-mark">IC3</span>
                   <span class="cert-status">No public link</span>
@@ -480,7 +612,7 @@
                 <h3>IC3 GS4 - Key Applications</h3>
                 <p>Internet and Computing Core Certification</p>
               </article>
-              <article class="cert-card cert-card-private reveal">
+              <article class="cert-card cert-card-private reveal" data-cert-title="IC3 GS4 - Living Online" data-cert-issuer="IC3">
                 <div class="cert-meta">
                   <span class="issuer-mark">IC3</span>
                   <span class="cert-status">No public link</span>
@@ -488,7 +620,7 @@
                 <h3>IC3 GS4 - Living Online</h3>
                 <p>Issued June 2015</p>
               </article>
-              <article class="cert-card cert-card-private reveal">
+              <article class="cert-card cert-card-private reveal" data-cert-title="IC3 Certification - Global Standard 4" data-cert-issuer="IC3">
                 <div class="cert-meta">
                   <span class="issuer-mark">IC3</span>
                   <span class="cert-status">No public link</span>
@@ -496,7 +628,7 @@
                 <h3>IC3 Certification - Global Standard 4</h3>
                 <p>Issued November 2015</p>
               </article>
-              <article class="cert-card cert-card-private reveal">
+              <article class="cert-card cert-card-private reveal" data-cert-title="2 additional Exabeam certificates" data-cert-issuer="Exabeam">
                 <div class="cert-meta">
                   <span class="issuer-mark">Exabeam</span>
                   <span class="cert-status">Offline copy</span>
@@ -532,6 +664,9 @@
               <a class="button button-primary" href="mailto:constantin.ududec20@gmail.com">
                 constantin.ududec20@gmail.com
               </a>
+              <button class="button button-secondary" type="button" id="copy-email">
+                Copy email
+              </button>
               <div class="social-grid">
                 <a class="social-card" href="https://www.linkedin.com/in/constantin-u-820384ab/" target="_blank" rel="noreferrer">
                   <span>LinkedIn</span>
@@ -564,6 +699,20 @@
           <a href="#top">Back to top</a>
         </div>
       </footer>
+    </div>
+
+    <div class="cert-modal" id="cert-modal" aria-hidden="true">
+      <div class="cert-modal-backdrop" data-close-modal></div>
+      <div class="cert-modal-panel" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+        <button class="cert-modal-close" type="button" data-close-modal aria-label="Close certificate preview">×</button>
+        <p class="section-tag">Certificate Preview</p>
+        <h3 id="cert-modal-title">Certificate title</h3>
+        <p class="cert-modal-issuer" id="cert-modal-issuer">Issuer</p>
+        <p class="cert-modal-text" id="cert-modal-text">
+          Quick preview for this certification card. Use the button below to open the credential when a public link is available.
+        </p>
+        <a class="button button-primary" id="cert-modal-link" href="#" target="_blank" rel="noreferrer">Open credential</a>
+      </div>
     </div>
 
     <script src="script.js?v=20260419-2"></script>
