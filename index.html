@@ -38,27 +38,49 @@
     <div class="page-shell">
       <header class="hero" id="top">
         <nav class="nav">
-          <a class="brand" href="#top">Constantin Ududec</a>
+          <a class="brand animated-brand" href="#top">
+            <span class="brand-text">Constantin Ududec</span>
+          </a>
           <div class="nav-links">
             <a href="#despre">Profile</a>
             <a href="#competente">Skills</a>
+            <a href="#stack">Stack</a>
             <a href="#engineering">Engineering</a>
             <a href="#experienta">Experience</a>
+            <a href="#projects">Projects</a>
             <a href="#certificari">Certifications</a>
             <a href="#contact">Contact</a>
           </div>
         </nav>
 
         <div class="hero-content reveal">
+          <div class="hero-topline">
+            <span class="availability-badge">Open to Security Engineer roles</span>
+          </div>
           <p class="eyebrow">Owner: Constantin Ududec</p>
           <h1>Security Engineer focused on detection, response and automation in cyber security.</h1>
           <p class="hero-text">
             This is my online CV, built to present clearly who I am, what I do,
             and how I contribute inside modern cyber security environments.
           </p>
+          <div class="hero-stats">
+            <article class="hero-stat">
+              <strong>3+</strong>
+              <span>Years across security operations and engineering</span>
+            </article>
+            <article class="hero-stat">
+              <strong>10+</strong>
+              <span>Platforms and tools used in monitoring and response</span>
+            </article>
+            <article class="hero-stat">
+              <strong>14+</strong>
+              <span>Certifications, badges and technical training records</span>
+            </article>
+          </div>
           <div class="hero-actions">
             <a class="button button-primary" href="#contact">Contact me</a>
             <a class="button button-secondary" href="#experienta">View experience</a>
+            <button class="button button-secondary" type="button" id="print-cv">Download CV</button>
           </div>
         </div>
 
@@ -129,6 +151,34 @@
                 detections and less operational noise.
               </p>
             </article>
+          </div>
+        </section>
+
+        <section class="section stack" id="stack">
+          <div class="section-heading reveal">
+            <p class="section-tag">Tool Stack</p>
+            <h2>Platforms and tools I use across monitoring, detection and response workflows</h2>
+          </div>
+          <div class="stack-shell reveal">
+            <div class="stack-intro">
+              <h3>Operational tooling across SIEM, EDR, SOAR and case management</h3>
+              <p>
+                My workflow sits at the intersection of security visibility, detection tuning,
+                incident investigation and response automation.
+              </p>
+            </div>
+            <div class="stack-grid">
+              <article class="stack-card"><span>SIEM</span><h4>Wazuh</h4></article>
+              <article class="stack-card"><span>SOAR</span><h4>Cortex XSOAR</h4></article>
+              <article class="stack-card"><span>EDR</span><h4>Microsoft Defender</h4></article>
+              <article class="stack-card"><span>EDR</span><h4>CrowdStrike Falcon</h4></article>
+              <article class="stack-card"><span>Case Mgmt</span><h4>TheHive</h4></article>
+              <article class="stack-card"><span>Detection</span><h4>Praeco</h4></article>
+              <article class="stack-card"><span>Analytics</span><h4>Exabeam</h4></article>
+              <article class="stack-card"><span>Endpoint</span><h4>SentinelOne</h4></article>
+              <article class="stack-card"><span>Endpoint</span><h4>Palo Alto EDR</h4></article>
+              <article class="stack-card"><span>Network</span><h4>Security Onion</h4></article>
+            </div>
           </div>
         </section>
 
@@ -274,6 +324,39 @@
               <span class="education-period">2013 - 2017</span>
               <h3>Colegiul National Stefan cel Mare Suceava</h3>
               <p>Baccalaureat, Mathematics and Computer Science</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section projects" id="projects">
+          <div class="section-heading reveal">
+            <p class="section-tag">Projects</p>
+            <h2>Case-study style highlights that show how I think, investigate and automate</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card project-card-primary reveal">
+              <span class="project-label">SOAR Workflow</span>
+              <h3>Response automation with Cortex XSOAR</h3>
+              <p>
+                Built around the idea of reducing repetitive analyst work through cleaner
+                playbooks, faster triage and more consistent response handling.
+              </p>
+            </article>
+            <article class="project-card reveal">
+              <span class="project-label">Detection Tuning</span>
+              <h3>Improving signal quality and reducing false positives</h3>
+              <p>
+                Focused on refining rules, correlations and alert logic so investigations
+                start from better quality detections.
+              </p>
+            </article>
+            <article class="project-card reveal">
+              <span class="project-label">Investigation Flow</span>
+              <h3>Threat analysis across SIEM, EDR and case platforms</h3>
+              <p>
+                Worked across tools such as Wazuh, TheHive, Defender and Exabeam to connect
+                context quickly and move incidents forward with clarity.
+              </p>
             </article>
           </div>
         </section>
@@ -427,16 +510,60 @@
 
         <section class="section contact reveal" id="contact">
           <div class="contact-panel">
-            <div>
+            <div class="contact-copy">
               <p class="section-tag">Contact</p>
               <h2>Available for opportunities in cyber security, detection and security engineering.</h2>
+              <p>
+                Open to Security Engineer, SOC, detection engineering and automation-focused
+                roles. Reach out through email or connect with me on the platforms below.
+              </p>
+              <div class="contact-meta">
+                <article class="contact-chip">
+                  <span>Location</span>
+                  <strong>Suceava, Romania</strong>
+                </article>
+                <article class="contact-chip">
+                  <span>Languages</span>
+                  <strong>Romanian / English</strong>
+                </article>
+              </div>
             </div>
-            <a class="button button-primary" href="mailto:constantin.ududec20@gmail.com">
-              constantin.ududec20@gmail.com
-            </a>
+            <div class="contact-actions">
+              <a class="button button-primary" href="mailto:constantin.ududec20@gmail.com">
+                constantin.ududec20@gmail.com
+              </a>
+              <div class="social-grid">
+                <a class="social-card" href="https://www.linkedin.com/in/constantin-u-820384ab/" target="_blank" rel="noreferrer">
+                  <span>LinkedIn</span>
+                  <strong>Professional profile</strong>
+                </a>
+                <a class="social-card" href="https://www.facebook.com/profile.php?id=100006320145294" target="_blank" rel="noreferrer">
+                  <span>Facebook</span>
+                  <strong>Direct profile</strong>
+                </a>
+                <a class="social-card" href="https://www.instagram.com/constantinududec/" target="_blank" rel="noreferrer">
+                  <span>Instagram</span>
+                  <strong>@constantinududec</strong>
+                </a>
+              </div>
+            </div>
           </div>
         </section>
       </main>
+
+      <footer class="site-footer reveal">
+        <div>
+          <h3>Constantin Ududec</h3>
+          <p>Security Engineer focused on detection, response and automation.</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:constantin.ududec20@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/constantin-u-820384ab/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.facebook.com/profile.php?id=100006320145294" target="_blank" rel="noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/constantinududec/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="#top">Back to top</a>
+        </div>
+      </footer>
     </div>
 
     <script src="script.js"></script>

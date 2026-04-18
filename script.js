@@ -26,6 +26,26 @@ setTimeout(() => {
   document.body.classList.remove("is-loading");
 }, 5000);
 
+const nav = document.querySelector(".nav");
+const printCvButton = document.querySelector("#print-cv");
+
+function syncNavState() {
+  if (!nav) {
+    return;
+  }
+
+  nav.classList.toggle("is-scrolled", window.scrollY > 24);
+}
+
+syncNavState();
+window.addEventListener("scroll", syncNavState, { passive: true });
+
+if (printCvButton) {
+  printCvButton.addEventListener("click", () => {
+    window.print();
+  });
+}
+
 const revealElements = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver(
